@@ -19,7 +19,7 @@
                 <!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
                     <table class="table table-hover">
-                        <tbody>
+                        <thead>
                         <tr>
                             <th>ID</th>
                             <th>UserName</th>
@@ -33,6 +33,8 @@
                                 </a>
                             </th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>183</td>
                             <td>John Doe</td>
