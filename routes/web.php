@@ -19,10 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('dashboard',function (){
-   return view('dashboard');
-});
+Route::get('Dashboard', 'HomeController@dashboard')->name('dashboard');
 
-Route::get('task',function (){
-   return view('list_of_tasks');
-});
+Route::resource('Tasks','Admin\TaskController')->middleware('auth');
